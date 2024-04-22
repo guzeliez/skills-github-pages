@@ -4,12 +4,6 @@
 
   {%- include head.html -%}
 
-  {% if page.usemathjax %}
-  <script type="text/javascript" async
-   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-  {% end if %}
-
   <body>
 
     {%- include header.html -%}
@@ -21,6 +15,11 @@
     </main>
 
     {%- include footer.html -%}
+
+    {% if site.mathjax == true %}
+    <!-- MathJax -->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
 
   </body>
 
