@@ -1,7 +1,15 @@
 <!DOCTYPE html>
+
+<head>
+  {% include scripts.html %}
+{% if site.mathjax == true %}
+<!-- MathJax -->
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
+{% endif %}
+</head>
+
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
