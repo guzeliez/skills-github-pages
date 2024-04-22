@@ -9,3 +9,5 @@ description: dfdfdfdfdfdfdfdfdfdf
 kramdown:
   input: GFM
   math_engine: mathjax # you can also set this field to 'katex'
+
+mathjax: true
